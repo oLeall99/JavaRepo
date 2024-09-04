@@ -1,0 +1,12 @@
+com\mycompany\lab04exe04\Lab04exe04.class
+com\mycompany\lab04exe04\Carro$Motor.class
+com\mycompany\lab04exe04\Carro$Banco.class
+com\mycompany\lab04exe04\Carro$Roda.class
+com\mycompany\lab04exe04\Carro$SistemaDeFreio.class
+com\mycompany\lab04exe04\Carro$PainelDeControle.class
+com\mycompany\lab04exe04\Carro$Carroceria.class
+com\mycompany\lab04exe04\Carro$Porta.class
+com\mycompany\lab04exe04\Carro$TanqueDeCombustivel.class
+com\mycompany\lab04exe04\Carro.class
+com\mycompany\lab04exe04\Carro$Farol.class
+com\mycompany\lab04exe04\Carro$Transmissao.class
