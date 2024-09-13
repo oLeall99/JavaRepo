@@ -9,8 +9,9 @@ package com.mycompany.teoria06exe03;
  * @author unifamussio
  */
 public abstract class Formas {
-    private String tipo; 
+    protected String tipo;
+    protected static final double pi = 3.1415926;
     
-    public abstract double perimetro();
-    public abstract double print();
+    abstract public double perimetro();
+    abstract public void print();
 }
