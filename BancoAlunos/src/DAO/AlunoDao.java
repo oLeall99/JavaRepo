@@ -14,14 +14,27 @@ public class AlunoDao {
     }
     
     public ResultSet consultar(Aluno aluno) throws SQLException {
-        String sql = "select * from aluno where usuario = '"
-                + aluno.getUser() + "' AND senha = '"
-                + aluno.getPassword() + "'";
+//        String sql = "select * from alunos where usuario = '"
+//                + aluno.getUser() + "' AND senha = '"
+//                + aluno.getPassword() + "'";
         
+        String sql = "select * from alunos where usuario = ? AND senha = ?"; 
         PreparedStatement statement = conn.prepareStatement(sql);
+        statement.setString(1,aluno.getUser());
+        statement.setString(2,aluno.getPassword());
         statement.execute();
         ResultSet res = statement.getResultSet();
         
         return res;
+    }
+    
+    public void inserir(Aluno aluno) throws SQLException{
+        String sql = "insert into alunos (nome, usuario, senha) values ('"
+                +aluno.getName() + "', '"
+                +aluno.getUser() + "', '"
+                +aluno.getPassword() + "')";
+        PreparedStatement statement = conn.prepareStatement(sql);
+        statement.execute();
+        conn.close();
     }
 } 

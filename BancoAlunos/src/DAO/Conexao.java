@@ -9,8 +9,9 @@ public class Conexao {
         Connection conexao = DriverManager.getConnection(
             "jdbc:postgresql://localhost:5432/alunos",
             "postgres", 
-            "admin"
+            "fei"
         );
+        System.out.println("conectou");
         return conexao;
     }
 }

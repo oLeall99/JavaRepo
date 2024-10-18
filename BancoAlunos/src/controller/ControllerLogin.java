@@ -28,6 +28,7 @@ public class ControllerLogin {
         try {
             Connection conn = conexao.getConnection();
             AlunoDao dao = new AlunoDao(conn);
+            
             ResultSet res = dao.consultar(aluno);
             
             if(res.next()){

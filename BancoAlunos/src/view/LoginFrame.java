@@ -102,6 +102,9 @@ public class LoginFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
         txtUser = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -109,19 +112,25 @@ public class LoginFrame extends javax.swing.JFrame {
         btnLogin = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
         setBackground(new java.awt.Color(0, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Usuário:");
 
         txtUser.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Senha:");
 
         txtPassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -136,10 +145,18 @@ public class LoginFrame extends javax.swing.JFrame {
             }
         });
 
-        jMenu1.setText("Login");
-        jMenuBar1.add(jMenu1);
+        jMenu1.setText("Cadastro");
 
-        jMenu2.setText("Edit");
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setText("Incluir Aluno");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -186,6 +203,11 @@ public class LoginFrame extends javax.swing.JFrame {
        cl.loginAluno();
     }//GEN-LAST:event_btnLoginActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        CadastroFrame cf = new CadastroFrame();
+        cf.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -229,7 +251,11 @@ public class LoginFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JTextField txtPassword;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
