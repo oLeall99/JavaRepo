@@ -4,8 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/DAO/AlunoDao.java</file>
-            <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/controller/ControllerCadastro.java</file>
             <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/controller/ControllerLogin.java</file>
+            <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/view/UserFrame.java</file>
+            <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/controller/ControllerUser.java</file>
+            <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/view/LoginFrame.java</file>
             <file>file:/C:/Users/unifamussio/Downloads/JavaRepo-main/JavaRepo-main/BancoAlunos/src/view/CadastroFrame.java</file>
         </group>
     </open-files>

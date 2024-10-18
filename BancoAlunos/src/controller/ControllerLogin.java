@@ -8,6 +8,7 @@ import DAO.Conexao;
 import DAO.AlunoDao;
 import model.Aluno;
 import view.LoginFrame;
+import view.UserFrame;
 
 public class ControllerLogin {
     private LoginFrame view;
@@ -38,6 +39,14 @@ public class ControllerLogin {
                         "Aviso", 
                         JOptionPane.INFORMATION_MESSAGE
                 );
+                String nome = res.getString("nome");
+                String usuario = res.getString("usuario");
+                String senha = res.getString("senha");
+                
+                Aluno aluno1 = new Aluno(nome, usuario, senha);
+                UserFrame uf = new UserFrame(aluno1);
+                uf.setVisible(true);
+                view.setVisible(false);
             }
             else{
                 JOptionPane.showMessageDialog(

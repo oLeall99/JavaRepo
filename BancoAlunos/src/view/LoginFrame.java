@@ -136,7 +136,7 @@ public class LoginFrame extends javax.swing.JFrame {
         txtPassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         btnLogin.setBackground(new java.awt.Color(255, 153, 51));
-        btnLogin.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        btnLogin.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         btnLogin.setText("Login");
         btnLogin.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
